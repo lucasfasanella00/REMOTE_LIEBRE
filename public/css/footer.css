@@ -1,3 +1,11 @@
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer span{
+    padding-left: 15px;
+}
 
 .main-footer ul{
     display: flex;
@@ -21,7 +29,6 @@
 
 .main-footer span{
     color: #666;
-    padding: 25px;
 }
 
 /* Desktop */

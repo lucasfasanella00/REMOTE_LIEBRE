@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .home .home-banner{
@@ -66,6 +67,14 @@
 
 .offers .product figure img{
     width: 100%;
+}
+
+.offers .product .details i{
+    color: #39b54a;
+}
+
+.offers .product .details .discount{
+    color: #39b54a;
 }
 
 @media (max-width: 361px){
