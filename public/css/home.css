@@ -35,8 +35,6 @@
     color: #666;
 }
 
-.home .recommend .product{}
-
 .home .recommend .product figure img{
     width: 100%;
 }
@@ -48,8 +46,6 @@
 .home .recommend .product .details .discount{
     color: #39b54a;
 }
-
-.home .recommend .product .name-product{}
 
 /* OFFERS */
 
@@ -72,11 +68,28 @@
     width: 100%;
 }
 
-.offers .product p{}
+@media (max-width: 361px){
+    .name-product{
+        display: none;
+    }
+}
 
-.offers .product .name-product{}
-
-
-
-
+@media (min-width: 768px) {
+    .home .offers .offers-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .home .offers .offers-container article{
+        margin: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .home .recommend .recommend-container{
+        display: flex;
+        flex-direction: row;
+    }
+    .home .recommend .recommend-container article{
+        margin: 10px;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
 
