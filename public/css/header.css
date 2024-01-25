@@ -1,20 +1,36 @@
 .main-header{
     background-color: #EAC926;
+    width: 100%;
 }
 
-.main-header img{
-    width: 50%;
-    padding: 15px;
+.main-header .header-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .main-header .barra-buscar{
     display: flex;
-    width: 80%;
-    padding-left: 15px;
 }
 
-.main-header .barra-buscar input{
-    width: 60%;
+.main-header .navs-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-header .navs-header ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.main-header .navs-header ul li{
+    margin: 10px;
+}
+
+.main-header .navs-header ul li i{
+    margin-left: 5px;
 }
 
 .main-header .barra-buscar i{
@@ -62,25 +78,67 @@
     margin: 10px;
 }
 
-/*  Phone  */
-@media (max-width: 361px){
+
+@media (max-width: 767px){
+    /* ---- Phones ---- */
     .main-header .nav-buy{
         display: none;
     }
     .main-header .nav-login{
         display: none;
     }
+    .main-header .home-logo{
+        width: 50%;
+    }
+    .main-header .home-logo img{
+        padding: 15px;
+    }
+    .main-header .header-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main-header .barra-buscar{
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 50%;
+    }
+    .main-header .barra-buscar input{
+        width: 90%;
+        border: none;
+        border-radius: 5px;
+        padding: 10px;
+        margin: auto;
+    }
+    .main-header .barra-buscar i{
+        background: none;
+        border: none;
+        position: absolute;
+        right: 8%;
+        background-color: white;
+        color: #666;
+    }
+    .header-1 h3{
+        margin: auto;
+    }
 }
-@media (min-width: 361px) {
+@media (min-width: 768px) {
+    /* ---- Tablets ---- */
     .main-header .burger-menu{
         display: none;
     }
     .main-header img{
         width: 200px;
+        margin: 15px;
     }
-}
-@media (min-width: 768px){
-    .main-header .barra-buscar input{
+    .main-header .barra-buscar{
         width: 30%;
+    }
+    .main-header .barra-buscar input{
+        width: 100%;
+    }
+    .main-header .header-1 h3{
+        margin-right: 15px;
     }
 }
