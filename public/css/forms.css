@@ -1,0 +1,55 @@
+
+.form-container{
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #ebebeb;
+}
+
+.form-container h3{
+    margin-left: 10px;
+}
+
+.form-container input{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-container .date-home{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .type-user{
+    display: flex;
+}
+
+
+.form-container .date-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .interests{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container .btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container .btn-submit{
+    background-color: #1259c3;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
