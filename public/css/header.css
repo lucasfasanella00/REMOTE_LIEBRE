@@ -78,6 +78,9 @@
     margin: 10px;
 }
 
+.main-header .tittle-header i{
+    margin: 2px;
+}
 
 @media (max-width: 767px){
     /* ---- Phones ---- */
