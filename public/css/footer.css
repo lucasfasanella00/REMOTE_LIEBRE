@@ -1,0 +1,44 @@
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer span{
+    padding-left: 15px;
+}
+
+.main-footer ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main-footer .element-1{
+    font-size: 30px;
+    color: #1259c3;
+}
+
+.main-footer .element-2{
+    color: #666;
+}
+
+.main-footer .element-3{
+    color: #666;
+}
+
+.main-footer span{
+    color: #666;
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+    /* ---- Tablets ---- */
+    .details-footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .main-footer ul{
+        margin: 10px;
+    }
+}
