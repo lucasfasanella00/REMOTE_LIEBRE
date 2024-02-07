@@ -81,6 +81,15 @@
     .name-product{
         display: none;
     }
+    .home-banner{
+        display: none;
+    }
+}
+
+@media (max-width: 767px){
+    .home-banner{
+        display: none;
+    }
 }
 
 @media (min-width: 768px) {
