@@ -33,6 +33,7 @@ footer span{
 
 /* Desktop */
 @media (min-width: 769px) {
+    /* ---- Tablets ---- */
     .details-footer{
         display: flex;
         flex-direction: row;

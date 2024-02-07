@@ -1,4 +1,4 @@
-.home{
+.home {
     width: 100%;
     background-color: #ebebeb;
     display: flex;
@@ -7,98 +7,141 @@
     padding-bottom: 30px;
 }
 
-.home .home-banner{
+.home .home-banner {
     width: 100%;
     margin: 0;
 }
-.home .home-banner img{
+
+.home .home-banner img {
     width: 100%;
 }
 
-.home .product .details{
+.home .product .details {
     border-top: solid 1px #ebebeb;
     padding: 15px;
+    position: relative;
+    align-items: center;
+}
+
+.home .product .details i{
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    color: #39b54a;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+.home .product .details .prices{
+    display: flex;
+    align-items: center;
+}
+
+.home .product .details .price{
+    margin: 0px 10px 0px 0px;
 }
 
 /* PRODUCTS RECOMMEND */
 
-.home .recommend{
+.home .recommend {
     width: 90%;
 }
 
-.home .recommend article{
+.home .recommend article {
     margin-bottom: 10px;
     margin-top: 10px;
     background-color: white;
 }
 
-.home .recommend .tittle-recommend{
+.home .recommend .tittle-recommend {
     color: #666;
 }
 
-.home .recommend .product figure img{
+.home .recommend .product figure img {
     width: 100%;
 }
 
-.home .recommend .product .details i{
-    color: #39b54a;
-}
-
-.home .recommend .product .details .discount{
+.home .recommend .product .details .discount {
     color: #39b54a;
 }
 
 /* OFFERS */
 
-.offers{
+.offers {
     width: 90%;
 }
 
 
-.offers .tittle-offers{
+.offers .tittle-offers {
     color: #666;
 }
 
-.offers article{
+.offers article {
     margin-bottom: 10px;
     margin-top: 10px;
     background-color: white;
 }
 
-.offers .product figure img{
+.offers .product figure img {
     width: 100%;
 }
 
-.offers .product .details i{
+.offers .product .details .discount {
     color: #39b54a;
 }
 
-.offers .product .details .discount{
-    color: #39b54a;
-}
-
-@media (max-width: 361px){
-    .name-product{
+@media (max-width: 361px) {
+    /* ----  Phones ---- */
+    .name-product {
         display: none;
     }
 }
 
 @media (min-width: 768px) {
-    .home .offers .offers-container{
+    /* ---- Tablets ---- */
+    .product{
+        width: 45%;
+    }
+    .home .offers .offers-container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    .home .offers .offers-container article{
+
+    .home .offers .offers-container article {
         margin: 10px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-    .home .recommend .recommend-container{
+
+    .home .recommend .recommend-container {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
     }
-    .home .recommend .recommend-container article{
+
+    .home .recommend .recommend-container article {
         margin: 10px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
 
+@media (min-width: 1024px){
+    /* ---- Desktop ---- */
+    .home .recommend .recommend-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .home .offers .offers-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .product{
+        width: 60%;
+    }
+}
