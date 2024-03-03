@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "name": "Cafetera Moulinex",
+        "description": "Cafetera con filtro",
+        "price": 6770,
+        "stock": 50,
+        "discount": "40%",
+        "image": "whisky.png"
+    },
+    {
+        "id": 2,
+        "name": "Monitor Samsung 24'",
+        "description": "Monitor Samsung 24' Android TV, 60hz",
+        "price": 3500,
+        "stock": 50,
+        "image": "whisky.png"
+    },
+    {
+        "id": 3,
+        "name": "Monitor Samsung 24'",
+        "description": "Monitor Samsung 24' Android TV, 60hz",
+        "price": 2500,
+        "stock": 50,
+        "image": "whisky.png"
+    },
+    {
+        "id": 4,
+        "name": "Monitor Samsung 24'",
+        "description": "Monitor Samsung 24' Android TV, 60hz",
+        "price": 2500,
+        "stock": 50,
+        "image": "whisky.png"
+    },
+    {
+        "id": 5,
+        "name": "Monitor Samsung 24'",
+        "description": "Monitor Samsung 24' Android TV, 60hz",
+        "price": 2500,
+        "stock": 50,
+        "image": "whisky.png"
+    },
+    {
+        "id": 6,
+        "name": "Monitor Samsung 24'",
+        "description": "Monitor Samsung 24' Android TV, 60hz",
+        "price": 2500,
+        "stock": 50,
+        "image": "whisky.png"
+    },
+    {
+        "id": 7,
+        "name": "Monitor Samsung 24'",
+        "description": "Monitor Samsung 24' Android TV, 60hz",
+        "price": 2500,
+        "stock": 50,
+        "image": "whisky.png"
+    }
+]
