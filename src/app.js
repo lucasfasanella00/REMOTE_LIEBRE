@@ -28,10 +28,12 @@ app.set('views', path.join(__dirname, '/views')); // Define la ubicación de la 
 const otherRouter = require('./routes/other.routes'); // Rutas main
 const productsRouter = require('./routes/products.routes'); // Rutas /products
 const adminRouter = require('./routes/admin.routes');
+const authRouter = require('./routes/auth.routes');
 
 app.use('/', otherRouter);
 app.use('/productos', productsRouter);
 app.use('/admin', adminRouter);
+app.use('/',authRouter);
 
 
 
