@@ -7,7 +7,7 @@
 
     <%- include('../partials/headerNavbar') %>
 
-    <form class="form-container" action="/" method="POST">
+    <form class="form-container" action="/registrarse" method="POST">
         <div class="date-user">
             <input type="text" name="name" placeholder="Nombre y apellido" required>
             <input type="text" name="username" placeholder="Nombre de usuario" required>
@@ -47,8 +47,8 @@
         </div>
         
         <div class="btn-container">
-            <a class="btn" href="/">Enviar</a>
-            <a class="btn reset" href="/">Cancelar</a>
+            <button type="submit">Enviar</button>
+            <button type="submit">Cancelar</button>
         </div>
         
         

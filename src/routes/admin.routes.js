@@ -5,11 +5,16 @@ const router = express.Router();
 // ************ Controller Require ************
 const {create, store, edit, update, destroy} = require('../controllers/admin');
 const { uploadProducts } = require('../middlewares/uploadFiles');
+const { detectTimeAction, checkAdmin } = require('../middlewares');
  
 
 /*** CREATE ONE PRODUCT ***/ 
-router.get('/crear-producto', create); 
-router.post('/crear-producto', uploadProducts.single("img"), store); 
+router.get('/crear-producto',
+checkAdmin, create); 
+router.post('/crear-producto', uploadProducts.single("img"),
+detectTimeAction,
+checkAdmin,
+store); 
 
 
 /*** EDIT ONE PRODUCT ***/ 

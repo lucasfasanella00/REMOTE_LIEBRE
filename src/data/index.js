@@ -4,6 +4,10 @@ const path = require('path');
 module.exports = {
     loadData: (data,filenameJSON = "productsDataBase")=>{
         const pathJSON = path.join(__dirname,`./${filenameJSON}.json`);
+        if(!fs.existsSync(pathJSON)){
+            fs.writeFileSync(pathJSON,"[]","utf-8")
+        }
+        
         const dataJSON = fs.readFileSync(pathJSON,'utf-8');
         const dataJS = JSON.parse(dataJSON);
         return dataJS;
