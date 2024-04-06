@@ -29,8 +29,10 @@ module.exports = (req,res)=>{
     avatar
    }
 
+   if(remember){
+      res.cookie("userLogin", req.session.userLogin,{maxAge: 5000})
+   }
+
    res.redirect('/')
-
-
 
 }

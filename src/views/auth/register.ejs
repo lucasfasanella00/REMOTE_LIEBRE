@@ -12,6 +12,9 @@
             <input type="text" name="name" placeholder="Nombre y apellido" required>
             <input type="text" name="username" placeholder="Nombre de usuario" required>
             <input type="email" name="email" placeholder="E-mail" required>
+            <% if(locals.errors){ %>
+            <%= errors?.email?.msg %>
+            <% } %>   
         </div>
         
         <h3 class="tittle-form1">Fecha de nacimiento</h3>
@@ -42,6 +45,9 @@
             <label>Seleccione una imagen de perfil:</label>
             <input type="file" name="avatar" accept=".jpg" multiple>
             <input type="password" name="clave" placeholder="Contraseña" required>
+            <% if(locals.errors){ %>
+                <%= errors?.password?.msg %>
+            <% } %> 
             <input type="password" name="clave" placeholder="Confirmar contraseña" required>
 
         </div>
